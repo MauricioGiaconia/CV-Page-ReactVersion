@@ -1,0 +1,72 @@
+.card{
+    width: 99%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align-last: left;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.card p{
+    margin-top: 15px;
+    
+}
+
+.card p span{
+    display: block;
+    margin-top: 8px;
+}
+
+.skill-container{
+    padding: 15px 0 0 0;
+}
+
+.span-skill{
+    float: left;
+    width: 100px;
+}
+
+.empty-skill{
+    width: 50%;
+    height: 17px;
+    background-color: rgb(126, 125, 125);
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.level-skill{
+    height: 16.8px;
+    background-color: rgb(1, 55, 92);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 6px;   
+ 
+}
+
+
+
+.w100{
+    width: 100%;
+}
+
+.w85{
+    width: 85%;
+}
+
+.w75{
+    width: 75%;
+}
+
+.w65{
+    width: 65%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w35{
+    width: 35%;
+}
