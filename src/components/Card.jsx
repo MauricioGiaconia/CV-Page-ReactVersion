@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import '../styles/Card.css';
 
 export function Card(prop) {
@@ -14,6 +16,13 @@ export function Card(prop) {
                                                               return <div key={index} className='skill-container'><span className='span-skill'><strong> {item['bold']} </strong> <br /> </span> <div className='empty-skill'><div className={'level-skill ' +item['iconContent'].level}></div></div></div>;
                                                             });
                     break;
+
+      case ('fontawesomeLink'): TextCont = () => prop.text.map((item, index) => {
+                                                        
+                                                              return <p className='cardText' key={index} ><span><strong> {item['bold']} </strong> <a href={item['iconContent'].href} target='_blank'><FontAwesomeIcon icon={item['iconContent'].faIcon}></FontAwesomeIcon></a></span></p>;
+                                                            });
+
+              break;
     }
       
    

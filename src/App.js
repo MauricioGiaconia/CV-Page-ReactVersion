@@ -3,6 +3,7 @@ import { Proyecto } from './components/Proyecto.jsx';
 import { Navigation } from './components/Navigation.jsx';
 import { Header } from './components/Header.jsx';
 import { Card } from './components/Card.jsx';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Link, Route, Router, Routes } from 'react-router-dom';
 
 const Home = () => <Header titulo = "Curriculum"></Header>;
@@ -88,7 +89,13 @@ function App() {
         </Card>
 
         <Card title="Habilidades"
-              text={[{'bold' : 'JavaScript',
+              text={[{'bold' : 'HTML',
+                      'iconContent': {'type' : 'skill',
+                                    'level' : 'w100'
+                                    }
+                      },
+                
+                      {'bold' : 'JavaScript',
                       'iconContent': {'type' : 'skill',
                                     'level' : 'w85'
                                     }
@@ -98,24 +105,62 @@ function App() {
                                     'level' : 'w85'
                                     }
                       },
+                      {'bold' : 'CSS',
+                      'iconContent': {'type' : 'skill',
+                                    'level' : 'w75'
+                                    }
+                      },
                       {'bold' : 'C#',
                       'iconContent': {'type' : 'skill',
                                     'level' : 'w65'
                                     }
                       },
+                      {'bold' : 'Java',
+                      'iconContent': {'type' : 'skill',
+                                    'level' : 'w65'
+                                    }
+                      },
+                      {'bold' : 'MySQL',
+                      'iconContent': {'type' : 'skill',
+                                    'level' : 'w65'
+                                    }
+                      },
+                      {'bold' : 'REACT',
+                      'iconContent': {'type' : 'skill',
+                                    'level' : 'w65'
+                                    }
+                      }
                     ]
-                    }
+                  }
               icon={true}>
 
         </Card>
 
-     
+        <Card title="Proyectos"
+              text={[{'bold' : 'GitHub: ',
+                      'iconContent': {'type' : 'fontawesomeLink',
+                                    'faIcon' : faGithub,
+                                    'href' : 'https://github.com/MauricioGiaconia'
+                                    }
+                      }
+                    ]
+                  }
+              icon={true}>
 
-        <Proyecto img = { jimg }
-                  title = "Proyecto N°2"
-                  subtitle = 'Proyecto con .NET y C#'
-                  description = "CRUD basado en sistema de arbitraje de equipos de futbol, realizado con .NET y C#."
-        />
+        </Card>
+
+        <Card title="LinkedIn"
+              text={[{'bold' : 'GitHub: ',
+                      'iconContent': {'type' : 'fontawesomeLink',
+                                    'faIcon' : faLinkedin,
+                                    'href' : 'https://www.linkedin.com/in/mauricio-giaconia/'
+                                    }
+                      }
+                    ]
+                  }
+              icon={true}>
+
+        </Card>
       </div>
       <footer>Este es el footer</footer>
     </div>
